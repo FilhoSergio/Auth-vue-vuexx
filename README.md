@@ -1,21 +1,23 @@
-# projeto
+# VueJs - Protegendo recursos com autenticação e Vuex
+
+Projeto baseado no curso de mesmo nome em Alura.com
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Subir projeto em modo dev
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Build 
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Lints / fixes 
 ```
 npm run lint
 ```
