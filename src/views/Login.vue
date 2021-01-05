@@ -33,23 +33,9 @@ export default {
   },
   methods: {
     efetuarLogin() {
-      this.$http
-        .post("/auth/login", this.usuario)
-        .then((response) => {
-          console.log(response);
-         
-          this.$store.state.token = response.data.access_token
-          this.$store.state.usuario = response.data.user
-          // localStorage.setItem("Token", response.data.access_token);
-          this.$store.commit('DEFINIR_USUARIO_LOGADO' , {
-            token : response.data.access_token,
-            usuario: response.data.user,
-          })
-          this.$router.push({ name: "gerentes" });
-        })
-        .catch((err) => {
-          console.error(err);
-        });
+      this.$store.dispatch("efetuarLogin", this.usuario).then(() => {
+        this.$router.push({ name: "gerentes" });
+      });
     },
   },
 };
