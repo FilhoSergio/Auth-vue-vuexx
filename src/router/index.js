@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Gerentes from "../views/Gerentes.vue";
 import Home from "../views/Home.vue";
-import NovoUsuario from "../views/NovoUsuario.vue";
+
 import Login from "../views/Login.vue";
 import provider from "@/provider";
 
@@ -22,7 +22,7 @@ const routes = [
   {
     path: "/cadastre-se",
     name: "novo.usuario",
-    component: NovoUsuario,
+    component: () => import( /*webpackChunkName: "registra" */ "../views/NovoUsuario.vue"),
     meta: {
       publica: true,
     },

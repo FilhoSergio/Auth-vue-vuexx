@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <BarraDeNavegacao  />
+    <BarraNavegacao  />
 
     <router-view />
   </div>
 </template>
 <script>
-import BarraDeNavegacao from "@/components/BarraDeNavegacao";
+import BarraNavegacao from "@/components/BarraNavegacao";
 
 export default {
   components: {
-    BarraDeNavegacao,
+    BarraNavegacao,
 
   },
 };
