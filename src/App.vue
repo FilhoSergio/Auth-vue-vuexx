@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <BarraNavegacao  />
+    <BarraNavegacao />
 
     <router-view />
   </div>
@@ -11,7 +11,6 @@ import BarraNavegacao from "@/components/BarraNavegacao";
 export default {
   components: {
     BarraNavegacao,
-
   },
 };
 </script>

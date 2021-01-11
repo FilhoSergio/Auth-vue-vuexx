@@ -46,6 +46,7 @@ export default {
         .dispatch("efetuarLogin", this.usuario)
         .then(() => {
           this.$router.push({ name: "gerentes" });
+          console.log('Usuario', this.usuario)
           this.mensagemErro = null;
         })
         .catch((error) => {
